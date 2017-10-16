@@ -19,4 +19,12 @@
         <servlet-name>checkboxtest</servlet-name>
         <url-pattern>/checkbox</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>allparameters</servlet-name>
+        <servlet-class>Paar.ParameterTest2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>allparameters</servlet-name>
+        <url-pattern>/allparam</url-pattern>
+    </servlet-mapping>
 </web-app>
