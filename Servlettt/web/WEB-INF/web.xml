@@ -11,4 +11,12 @@
                 <servlet-name>parametrtest1servlet</servlet-name>
                 <url-pattern>/paramtest1</url-pattern>
             </servlet-mapping>
+    <servlet>
+        <servlet-name>checkboxtest</servlet-name>
+        <servlet-class>Paar.CheckBoxTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkboxtest</servlet-name>
+        <url-pattern>/checkbox</url-pattern>
+    </servlet-mapping>
 </web-app>
