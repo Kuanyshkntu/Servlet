@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-public class SessionTestServlet extends HttpServlet {
+public class SesCalc extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
@@ -45,27 +45,27 @@ public class SessionTestServlet extends HttpServlet {
                 "  <th>Session info</th><th>value</th>"+
                 "</tr>\n"+
                 "<tr>\n"+
-                        "<td>id</td>\n"+
-                        "<td>"+session.getId()+"</td>"+
-                        "</tr>\n"+
+                "<td>id</td>\n"+
+                "<td>"+session.getId()+"</td>"+
+                "</tr>\n"+
                 "<tr>\n"+
-                        "<td>Creation Time<td>\n"+
-                        "<td>" + createTime + "</td> "+
-                        "</tr>\n"+
+                "<td>Creation Time<td>\n"+
+                "<td>" + createTime + "</td> "+
+                "</tr>\n"+
                 "<tr>\n"+
-                        "<td>Time of Last Access</td>\n"+
-                        "<td>"+lastAccessTime+"</td>"+
-                        "</tr>\n"+
+                "<td>Time of Last Access</td>\n"+
+                "<td>"+lastAccessTime+"</td>"+
+                "</tr>\n"+
                 "<tr>\n" +
-                        "<td>User ID</td>\n"+
-                        "<td>"+userID+"</td>"+
-                        "</tr>\n"+
+                "<td>User ID</td>\n"+
+                "<td>"+userID+"</td>"+
+                "</tr>\n"+
                 "<tr>\n" +
-                        "<td>Number of visits</td>\n"+
-                        "<td>"+visitCount+"</td>"+
-                        "</tr>\n"+
+                "<td>Number of visits</td>\n"+
+                "<td>"+visitCount+"</td>"+
+                "</tr>\n"+
                 "</table>\n" +
-                   
+
                 "</body>\n"+
                 "</html>");
     }
