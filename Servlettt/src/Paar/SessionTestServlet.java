@@ -64,8 +64,8 @@ public class SessionTestServlet extends HttpServlet {
                         "<td>Number of visits</td>\n"+
                         "<td>"+visitCount+"</td>"+
                         "</tr>\n"+
-                "</table>\n" +
-                   
+                "<table>\n" +
+
                 "</body>\n"+
                 "</html>");
     }

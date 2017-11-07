@@ -16,16 +16,6 @@ public class Calc extends HttpServlet {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         String title = "Kuanysh Get";
-        String docType = "<!doctype html>\n";
-
-
-
-        out.println(docType+"<html>\n"+
-                "<head><title>"+title+"</title></head>\n"+
-                "<body bgcolor = \"#f0f0f0\">\n"+
-                "<h1 align = \"center\">"+title+"</h1>\n"+
-                "<ul>\n"+
-                "<li><b>Jauaby</b>:");
         String a = req.getParameter( "first_number");
         String b = req.getParameter( "second_number");
         String c = req.getParameter("oper");
@@ -50,7 +40,16 @@ public class Calc extends HttpServlet {
             aa="/";
         }
         String result=String.valueOf(res);
-        out.println(a+aa+b+"="+
+        String docType = "<!doctype html>\n";
+
+
+
+        out.println(docType+"<html>\n"+
+                "<head><title>"+title+"</title></head>\n"+
+                "<body bgcolor = \"#f0f0f0\">\n"+
+                "<h1 align = \"center\">"+title+"</h1>\n"+
+                "<ul>\n"+
+                "<li><b>Jauaby</b>:"+a+aa+b+"="+
 
 
         result+"\n"+
